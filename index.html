@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP CS A Review Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AP CS A Exam Review</h1>
+    </header>
+    
+    <main>
+        <div class="section-nav">
+            <button class="section-nav-btn" data-section="control-panel">Game Controls</button>
+            <button class="section-nav-btn" data-section="team-management">Team Management</button>
+            <button class="section-nav-btn" data-section="score-section">All Teams</button>
+            <button class="section-nav-btn" data-section="student-management">Student Management</button>
+        </div>
+        <div class="game-container">
+            <div class="control-panel">
+                <div class="game-controls">
+                    <div class="control-buttons">
+                        <button id="next-team" class="primary-btn">Select Random Team</button>
+                        <div class="question-range-controls">
+                            <button id="next-question" class="primary-btn">Random Question</button>
+                            <div class="range-inputs">
+                                <input type="number" id="min-question" min="1" max="40" value="1" class="number-input">
+                                <span>to</span>
+                                <input type="number" id="max-question" min="1" max="40" value="40" class="number-input">
+                            </div>
+                            <div id="current-question-display">Question: <span id="current-question">1</span></div>
+                        </div>
+                    </div>
+                    
+                    <div class="selected-team">
+                        <h3>Selected Team:</h3>
+                        <div id="selected-team-display" class="selected-team-members">
+                            <p>None selected</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="leaderboard-section">
+                    <h3>Leaderboard</h3>
+                    <div class="score-controls">
+                        <button id="correct-answer" class="success-btn">Correct (+1)</button>
+                        <button id="incorrect-answer" class="danger-btn">Incorrect (-0)</button>
+                    </div>
+                    <div id="leaderboard" class="leaderboard">
+                        <!-- Top teams will be displayed here -->
+                        <div class="no-teams-message">No teams created yet</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-management">
+                <h2>Team Management</h2>
+                <div class="team-controls">
+                    <button id="pick-captain" class="warning-btn">Pick Random Captain</button>
+                    <button id="create-teams" class="primary-btn">Create Random Teams</button>
+                    <select id="team-size" class="select-input">
+                        <option value="1">Individual (1 person)</option>
+                        <option value="2" selected>Pairs (2 people)</option>
+                        <option value="3">Groups (3 people)</option>
+                    </select>
+                    <button id="reset-teams" class="danger-btn">Reset All Teams</button>
+                </div>
+                <div id="team-building-area" class="team-building-area hidden">
+                    <h3>Team Building: <span id="captain-name">No Captain Selected</span></h3>
+                    <div class="team-building-controls">
+                        <button id="finish-team" class="success-btn hidden">Finish Team</button>
+                        <button id="cancel-team-build" class="danger-btn">Cancel</button>
+                    </div>
+                    <div class="available-students-container">
+                        <h4>Available Students</h4>
+                        <div id="available-students" class="available-students"></div>
+                    </div>
+                    <div class="captain-team-container">
+                        <h4>Captain's Team</h4>
+                        <div id="captain-team" class="captain-team"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="score-section">
+                <h2>All Teams</h2>
+                <div id="team-list" class="team-list">
+                    <!-- Teams will be generated here -->
+                </div>
+            </div>
+            
+            <div class="student-management">
+                <h2>Student Management</h2>
+                <div id="student-list" class="student-list">
+                    <!-- Students will be generated here -->
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>AP CS A Review - Gonzaga</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
