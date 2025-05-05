@@ -1,21 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Student roster from your CSV file, with image filenames
+    // Updated student roster for AP Computer Science Principles
     const students = [
-        { firstName: "Sam", lastName: "Badrak", email: "badraks@gonzaga.org", score: 0, present: true, image: "badrak.jpg" },
-        { firstName: "Ethan", lastName: "Brown", email: "browne@gonzaga.org", score: 0, present: true, image: "brown.jpg" },
-        { firstName: "Nate", lastName: "Carr", email: "carrn@gonzaga.org", score: 0, present: true, image: "carr.jpg" },
-        { firstName: "Braden", lastName: "Eggstaff", email: "eggstaffb@gonzaga.org", score: 0, present: true, image: "eggstaff.jpg" },
-        { firstName: "Bryce", lastName: "Gilbertson", email: "gilbertsonb@gonzaga.org", score: 0, present: true, image: "gilbertson.jpg" },
-        { firstName: "Mark", lastName: "Joyner", email: "joynerm@gonzaga.org", score: 0, present: true, image: "joyner.jpg" },
-        { firstName: "Dylan", lastName: "Kennedy", email: "kennedyd@gonzaga.org", score: 0, present: true, image: "kennedy.jpg" },
-        { firstName: "Jack", lastName: "McNair", email: "mcnairj@gonzaga.org", score: 0, present: true, image: "mcnair.jpg" },
-        { firstName: "Caleb", lastName: "Oliver", email: "oliverc@gonzaga.org", score: 0, present: true, image: "oliver.jpg" },
-        { firstName: "Joseph", lastName: "Portolese", email: "portolesej@gonzaga.org", score: 0, present: true, image: "portolese.jpg" },
-        { firstName: "Nico", lastName: "Rodriguez", email: "rodriguezn@gonzaga.org", score: 0, present: true, image: "rodriguez.jpg" },
-        { firstName: "Matthew", lastName: "Salemme", email: "salemmema@gonzaga.org", score: 0, present: true, image: "salemme.jpg" },
-        { firstName: "Eamonn", lastName: "Schulz", email: "schulze@gonzaga.org", score: 0, present: true, image: "schulz.jpg" },
-        { firstName: "Bear", lastName: "Smith", email: "smithb@gonzaga.org", score: 0, present: true, image: "smith.jpg" },
-        { firstName: "Carter", lastName: "Stone", email: "stonec@gonzaga.org", score: 0, present: true, image: "stone.jpg" }
+        { firstName: "John", lastName: "Bamford", email: "bamfordj@gonzaga.org", score: 0, present: true, image: "bamford.jpg" },
+        { firstName: "Phinn", lastName: "BonSalle", email: "bonsallep@gonzaga.org", score: 0, present: true, image: "bonsalle.jpg" },
+        { firstName: "Ryan", lastName: "Casteel", email: "casteelr@gonzaga.org", score: 0, present: true, image: "casteel.jpg" },
+        { firstName: "Christian", lastName: "Clarke", email: "clarkec@gonzaga.org", score: 0, present: true, image: "clarke.jpg" },
+        { firstName: "Nate", lastName: "Clowers", email: "clowersn@gonzaga.org", score: 0, present: true, image: "clowers.jpg" },
+        { firstName: "Tommy", lastName: "Doherty", email: "dohertyt@gonzaga.org", score: 0, present: true, image: "doherty.jpg" },
+        { firstName: "Olof", lastName: "Hunnius", email: "hunniuso@gonzaga.org", score: 0, present: true, image: "hunnius.jpg" },
+        { firstName: "Zeke", lastName: "Jones", email: "jonesz@gonzaga.org", score: 0, present: true, image: "jones.jpg" },
+        { firstName: "Tommy", lastName: "Leland", email: "lelandt@gonzaga.org", score: 0, present: true, image: "leland.jpg" },
+        { firstName: "Daniel", lastName: "Mebrahtu", email: "mebrahtud@gonzaga.org", score: 0, present: true, image: "mebrahtu.jpg" },
+        { firstName: "Colin", lastName: "Meunier", email: "meunierc@gonzaga.org", score: 0, present: true, image: "meunier.jpg" },
+        { firstName: "Matteo", lastName: "Piermarini", email: "piermarinima@gonzaga.org", score: 0, present: true, image: "piermarini.jpg" },
+        { firstName: "Alex", lastName: "Rothenberg", email: "rothenberga@gonzaga.org", score: 0, present: true, image: "rothenberg.jpg" },
+        { firstName: "Anthony", lastName: "See", email: "seea@gonzaga.org", score: 0, present: true, image: "see.jpg" },
+        { firstName: "Dante", lastName: "Uptgrow", email: "uptgrowd@gonzaga.org", score: 0, present: true, image: "uptgrow.jpg" },
+        { firstName: "Trevor", lastName: "Weiner", email: "weinert@gonzaga.org", score: 0, present: true, image: "weiner.jpg" }
     ];
 
     // Game state
