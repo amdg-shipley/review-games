@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // need to make a change
     // Student roster for AP Computer Science Principles
     const students = [
         { firstName: "John", lastName: "Bamford", email: "bamfordj@gonzaga.org", score: 0, present: true, image: "bamford.jpg" },
