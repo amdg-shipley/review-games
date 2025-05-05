@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Updated student roster for AP Computer Science Principles
+    // Student roster for AP Computer Science Principles
     const students = [
         { firstName: "John", lastName: "Bamford", email: "bamfordj@gonzaga.org", score: 0, present: true, image: "bamford.jpg" },
         { firstName: "Phinn", lastName: "BonSalle", email: "bonsallep@gonzaga.org", score: 0, present: true, image: "bonsalle.jpg" },
