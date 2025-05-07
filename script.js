@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { firstName: "Alex", lastName: "Rothenberg", email: "rothenberga@gonzaga.org", score: 0, present: true, image: "rothenberg.jpg" },
         { firstName: "Anthony", lastName: "See", email: "seea@gonzaga.org", score: 0, present: true, image: "see.jpg" },
         { firstName: "Dante", lastName: "Uptgrow", email: "uptgrowd@gonzaga.org", score: 0, present: true, image: "uptgrow.jpg" },
-        { firstName: "Trevor", lastName: "Weiner", email: "weinert@gonzaga.org", score: 0, present: true, image: "weiner.jpg" }
-        { firstName: "John", lastName: "Gilliam", email: "gilliamj@gonzaga.org", score: 0, present: true, image: "gilliam.jpg" },
+        { firstName: "Trevor", lastName: "Weiner", email: "weinert@gonzaga.org", score: 0, present: true, image: "weiner.jpg" },
+        { firstName: "John", lastName: "Gilliam", email: "gilliamj@gonzaga.org", score: 0, present: true, image: "gilliam.jpg" }
     ];
 
     // Game state
